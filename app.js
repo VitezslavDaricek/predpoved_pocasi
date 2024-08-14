@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         function fetchWeather(city) {
-            const apiKey = '';  // Vkládání API klíče z OpenWeatherMap
+            const apiKey = '145de51f904bf72d38ba21d735e4d721';  // Vkládání API klíče z OpenWeatherMap
             fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`)
                 .then(response => response.json())
                 .then(data => {
