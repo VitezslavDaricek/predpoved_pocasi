@@ -5,10 +5,12 @@ Jednoduchá webová aplikace, která zobrazuje předpověď počasí pro vybran�
 
 ## Jak spustit
 1. Klonujte repozitář: `git clone https://github.com/VitezslavDaricek/predpoved_pocasi`
-2. Otevřete `index.html` v prohlížeči
+2. Nainstalujte si balíček http-server příkazem npm install -g http-server. Musíte mít nainstalovaný program Node.js.
+3. Následně spusťte příkaz http-server. Server bude běžet implicitně na adrese http://localhost:8080/.
 
 ## Požadavky
 - Google Chrome (poslední verze)
+- Microsoft Edge (poslední verze)
 - Mozilla Firefox (poslední verze)
 
 ## Struktura projektu
