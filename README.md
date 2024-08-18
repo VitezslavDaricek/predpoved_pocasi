@@ -9,6 +9,7 @@ Jednoduchá webová aplikace, která zobrazuje předpověď počasí pro vybran�
 
 ## Požadavky
 - Google Chrome (poslední verze)
+- Microsoft Edge (poslední verze)
 - Mozilla Firefox (poslední verze)
 
 ## Struktura projektu
