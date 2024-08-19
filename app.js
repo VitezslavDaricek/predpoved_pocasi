@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const datalist = document.getElementById("city-list");
             cities.forEach(city => {
                 const option = document.createElement("option");
-                option.value = `${city.name}, ${city.country};
+                option.value = `${city.name}, ${city.country}`;
                 datalist.appendChild(option);
             });
         });
