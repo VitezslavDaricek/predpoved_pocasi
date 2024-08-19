@@ -5,6 +5,7 @@ Tato aplikace pro předpověď počasí umožňuje uživatelům zadat město a z
 **Zobrazení Předpovědi Počasí:** Uživatel zadá název města a aplikace zobrazí předpověď teploty na pět dní.
 **Datalist pro Města:** Aplikace obsahuje dynamický seznam měst, ze kterého si uživatel může vybírat.
 **Zpracování Chyb:** Pokud se vyskytnou problémy s načítáním dat (např. město nebylo nalezeno), zobrazí se chybová zpráva.
+**Zobrazení jako graf:** Předpověď se dokáže zobrazit jako graf. Byla použita knihovna třetí strany Chart.js.
 
 Použité Technologie
 **React:** Pro vytváření uživatelského rozhraní.
@@ -33,6 +34,7 @@ Aplikace by měla být dostupná na adrese http://localhost:3000.
 **Struktura Projektu**
 **public/:** Obsahuje statické soubory a hlavní index.html.
 **src/:** Obsahuje zdrojový kód aplikace.
+**components/TemperatureChart.js:** Komponenta pro vykreslení grafu.
 **App.js:** Hlavní komponenta Reactu, která zajišťuje načítání počasí a vykreslování komponent.
 **App.css:** CSS stylování pro aplikaci.
 **city.list.json:** Soubor s daty měst pro datalist.
@@ -41,7 +43,7 @@ Aplikace by měla být dostupná na adrese http://localhost:3000.
 **Použití**
 1. Do vstupního pole zadejte název města (např. "Praha, CZ").
 2. Vyberte město ze seznamu návrhů.
-3. Aplikace automaticky načte a zobrazí předpověď počasí pro následujících 5 dní.
+3. Aplikace automaticky načte a zobrazí předpověď počasí pro následujících 5 dní a graf.
 
 **Licence**
 Tento projekt je licencován pod licencí MIT. Podrobnosti naleznete v souboru LICENSE.
