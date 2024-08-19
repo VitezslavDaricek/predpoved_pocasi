@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.css'; // Import CSS
+import TemperatureChart from './components/TemperatureChart'; // Import komponenty grafu
 
 class App extends Component {
   constructor(props) {
@@ -7,9 +8,8 @@ class App extends Component {
     this.state = {
       cities: [],
       weather: [],
-      error: null
+      error: null,
     };
-    this.apiKey = '145de51f904bf72d38ba21d735e4d721';
   }
 
   async componentDidMount() {
@@ -23,8 +23,11 @@ class App extends Component {
   }
 
   fetchWeather = async (city) => {
+    const apiKey = '145de51f904bf72d38ba21d735e4d721';
     try {
-      const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${this.apiKey}`);
+      const response = await fetch(
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`
+      );
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -61,15 +64,20 @@ class App extends Component {
         </datalist>
         <div id="weather-container">
           {error && <p>{error}</p>}
-          {weather.map((item, index) => {
-            const date = new Date(item.dt * 1000);
-            return (
-              <div key={index} className="weather-item">
-                <strong>{date.toLocaleDateString()}</strong>
-                <p>Teplota: {item.main.temp}°C</p>
-              </div>
-            );
-          })}
+          {weather.length > 0 && (
+            <>
+              {weather.map((item, index) => {
+                const date = new Date(item.dt * 1000);
+                return (
+                  <div key={index} className="weather-item">
+                    <strong>{date.toLocaleDateString()}</strong>
+                    <p>Teplota: {item.main.temp}°C</p>
+                  </div>
+                );
+              })}
+              <TemperatureChart weather={weather} />
+            </>
+          )}
         </div>
       </div>
     );
