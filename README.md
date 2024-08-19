@@ -17,7 +17,7 @@ Jednoduchá webová aplikace, která zobrazuje předpověď počasí pro vybran�
 - `index.html` - Hlavní HTML stránka
 - `style.css` - CSS stylování
 - `app.js` - JavaScriptová logika
-- `cities.json` - JSON soubor s městy
+- `city.list.json` - JSON soubor s městy
 - `README.md` - Dokumentace
 
 ## API
