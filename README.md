@@ -31,23 +31,26 @@ REACT_APP_OPENWEATHERMAP_API_KEY=Váš_API_Klíč
 
 ## Spuštění Aplikace
 
-Aplikaci spustíte následujícím příkazem:<br />
-npm start<br />
+Aplikaci spustíte následujícím příkazem:
+npm start
+
 Aplikace by měla být dostupná na adrese `http://localhost:3000`.
 
 ## Struktura Projektu 
-- **public/:** Obsahuje statické soubory a hlavní `index.html`.
-- **src/:** Obsahuje zdrojový kód aplikace.
-- **components/TemperatureChart.js:** Komponenta pro vykreslení grafu.
-- **App.js:** Hlavní komponenta Reactu, která zajišťuje načítání počasí a vykreslování komponent.
-- **App.css:** CSS stylování pro aplikaci.
-- **city.list.json:** Soubor s daty měst pro datalist.
-- **.env:** Soubor s vaším API klíčem (není zahrnut ve verzi git).
 
-**Použití**<br />
+- public/: Obsahuje statické soubory a hlavní `index.html`.
+- src/: Obsahuje zdrojový kód aplikace.
+  - components/TemperatureChart.js: Komponenta pro vykreslení grafu předpovědi teploty.
+  - App.js: Hlavní komponenta Reactu, která zajišťuje načítání počasí, správu našeptávače pro města a vykreslování všech komponent.
+  - App.css: CSS stylování pro aplikaci.
+  - city.list.json: Soubor s daty měst pro dynamický našeptávač (datalist).
+  - TemperatureChart.js: Komponenta pro vykreslení grafu předpovědi teploty.
+- .env: Soubor s vaším API klíčem (není zahrnut ve verzi git).
+
+## Použití
 1. Do vstupního pole zadejte název města (např. "Praha, CZ").
 2. Vyberte město ze seznamu návrhů.
 3. Aplikace automaticky načte a zobrazí předpověď počasí pro následujících 5 dní a graf.
 
-**Licence**<br />
+## Licence
 Tento projekt je licencován pod licencí MIT. Podrobnosti naleznete v souboru LICENSE.
