@@ -23,16 +23,16 @@ git clone https://github.com/vase-uzivatelske-jmeno/predpoved-pocasi.git
 cd predpoved-pocasi
 3. Nainstalujte závislosti:
 npm install
-4. Vytvořte soubor .env v kořenovém adresáři projektu a přidejte svůj API klíč pro OpenWeatherMap:
+4. Vytvořte soubor `.env` v kořenovém adresáři projektu a přidejte svůj API klíč pro OpenWeatherMap:
 REACT_APP_OPENWEATHERMAP_API_KEY=Váš_API_Klíč
 
 **Spuštění Aplikace**
 Aplikaci spustíte následujícím příkazem:
 npm start
-Aplikace by měla být dostupná na adrese http://localhost:3000.
+Aplikace by měla být dostupná na adrese `http://localhost:3000`.
 
 **Struktura Projektu**
-**public/:** Obsahuje statické soubory a hlavní index.html.
+**public/:** Obsahuje statické soubory a hlavní `index.html`.
 **src/:** Obsahuje zdrojový kód aplikace.
 **components/TemperatureChart.js:** Komponenta pro vykreslení grafu.
 **App.js:** Hlavní komponenta Reactu, která zajišťuje načítání počasí a vykreslování komponent.
