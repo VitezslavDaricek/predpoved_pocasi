@@ -17,6 +17,11 @@ Tato aplikace pro předpověď počasí umožňuje uživatelům zadat město a z
 - **Node.js** a **npm** (pro spuštění aplikace)
 - **API klíč** pro OpenWeatherMap
 
+## Podpora prohlížečů
+- Google Chrome (poslední verze)
+- Microsoft Edge (poslední verze)
+- Mozilla Firefox (poslední verze)
+
 ## Instalace
 
 1. Naklonujte tento repozitář do vašeho lokálního zařízení:
