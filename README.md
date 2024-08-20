@@ -5,7 +5,7 @@ Tato aplikace pro předpověď počasí umožňuje uživatelům zadat město a z
 **Zobrazení Předpovědi Počasí:** Uživatel zadá název města a aplikace zobrazí předpověď teploty na pět dní.
 **Datalist pro Města:** Aplikace obsahuje dynamický seznam měst, ze kterého si uživatel může vybírat.
 **Zpracování Chyb:** Pokud se vyskytnou problémy s načítáním dat (např. město nebylo nalezeno), zobrazí se chybová zpráva.
-**Zobrazení jako graf:** Předpověď se dokáže zobrazit jako graf. Byla použita knihovna třetí strany Chart.js.
+**Zobrazení jako graf:** Předpověď se může zobrazit jako graf. Byla použita knihovna třetí strany Chart.js.
 
 Použité Technologie
 **React:** Pro vytváření uživatelského rozhraní.
