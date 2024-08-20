@@ -1,4 +1,4 @@
-<strong>Aplikace pro Předpověď Počasí</strong>
+**Aplikace pro Předpověď Počasí**<br />
 Tato aplikace pro předpověď počasí umožňuje uživatelům zadat město a zobrazit předpověď počasí na pět dní dopředu. Aplikace využívá API OpenWeatherMap a byla vytvořena pomocí Reactu.
 
 **Funkce**
